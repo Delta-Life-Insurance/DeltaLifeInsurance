@@ -32,7 +32,6 @@ namespace DeltaLifeInsurance.Repositories.Implementation.InventoryRepository
         public async Task<List<Unit>> List()
         {
             List<Unit> _list = new List<Unit>();
-
             
                var test = _handler.ReturnString("select UnitName from Inv_Unit");
             using (var conexion = new SqlConnection(_SQLString))
